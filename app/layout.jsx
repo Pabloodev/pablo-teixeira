@@ -1,6 +1,5 @@
 import "./ui/globals.css";
 import { geistSans, geistMono } from "./ui/fonts";
-import Drag from "./ui/components/Drag";
 
 export const metadata = {
   title: "Pablo Teixeira | Fullstack developer",
@@ -13,7 +12,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Drag />
         {children}
       </body>
     </html>

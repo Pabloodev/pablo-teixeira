@@ -8,9 +8,8 @@ export default function HTMLContent({ onValueChange }) {
     const rounded = useTransform(() => Math.round(count.get()));
 
     useEffect(() => {
-        const controls = animate(count, 100, { duration: 5 });
+        const controls = animate(count, 100, { duration: 7 });
 
-        // Atualiza o estado sempre que `rounded` muda
         const unsubscribe = rounded.on("change", (value) => {
             onValueChange?.(value);
         });
@@ -29,6 +28,6 @@ export default function HTMLContent({ onValueChange }) {
  */
 
 const text = {
-    fontSize: 84,
-    color: "#4ff0b7",
+    fontSize: 100,
+    color: "rgb(255, 255, 255)",
 };

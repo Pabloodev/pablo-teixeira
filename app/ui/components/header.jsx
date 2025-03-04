@@ -3,8 +3,8 @@ import { House, User, LaptopMinimal } from "lucide-react";
 
 export default function Header() {
   return (
-    <div className="flex justify-between">
-      <span>pablodev.</span>
+    <div className="flex justify-between ">
+      <span className="font-bold text-white glow">pablodev.</span>
 
       <nav className="flex space-x-4">
         <Link href="/home">

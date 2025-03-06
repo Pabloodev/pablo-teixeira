@@ -1,4 +1,4 @@
-import FollowCursor from "./ui/components/FollowCursor";
+import FollowCursor from "./ui/components/followCursor";
 import "./ui/globals.css";
 import { geistSans, geistMono } from "./ui/fonts";
 

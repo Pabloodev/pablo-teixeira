@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Rocket, Sparkles } from 'lucide-react';
 import { useState } from "react";
-import { Button } from "@/app/ui/components/Button";
+import { Button } from "@/app/ui/components/button";
 import HTMLContent from "./ui/components/HTMLContent";
 import {motion} from 'motion/react'
 

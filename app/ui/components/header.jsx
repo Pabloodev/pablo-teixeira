@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { House, User, LaptopMinimal, Minus, Square, X } from "lucide-react";
-import { Button } from "./Button";
+import { Button } from "./button";
 
 export default function Header() {
   return (

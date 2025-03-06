@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { House, User, LaptopMinimal } from "lucide-react";
+import { House, User, LaptopMinimal, Minus, Square, X } from "lucide-react";
+import { Button } from "./Button";
 
 export default function Header() {
   return (
@@ -18,7 +19,23 @@ export default function Header() {
         </Link>
       </nav>
 
-      <Link href="/contatc">Contact Me</Link>
+      <ul className="flex items-center space-x-4">
+        <li>
+          <Button className="cursor-pointer">
+            <Minus />
+          </Button>
+        </li>
+        <li>
+          <Button className="cursor-pointer">
+            <Square />
+          </Button>
+        </li>
+        <li>
+          <Button className="cursor-pointer">
+            <X />
+          </Button>
+        </li>
+      </ul>
     </div>
   );
 }

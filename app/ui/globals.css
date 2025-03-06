@@ -2,10 +2,10 @@
 @plugin "tailwindcss-animate";
 @custom-variant dark (&:is(.dark *));
 
+
 body {
   background-color: black;
   color: white;
-  overflow: hidden;
   font-family: Geist;
 }
 

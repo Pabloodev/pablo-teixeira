@@ -1,4 +1,3 @@
-import FollowCursor from "./ui/components/followCursor";
 import "./ui/globals.css";
 import { geistSans, geistMono } from "./ui/fonts";
 
@@ -13,7 +12,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <FollowCursor />
         {children}
       </body>
     </html>

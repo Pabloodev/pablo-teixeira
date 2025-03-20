@@ -2,17 +2,10 @@
 
 import { motion } from "motion/react";
 import Image from "next/image";
-import {
-  House,
-  User,
-  LaptopMinimal,
-  Minus,
-  Square,
-  X,
-  ArrowRight,
-} from "lucide-react";
+import { Minus, Square, X, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { useRef } from "react";
+import { projects } from "../data/projects";
 
 export default function Home() {
   const constraintsRef = useRef(null);
@@ -26,26 +19,26 @@ export default function Home() {
       >
         <div className="flex flex-col items-center justify-center min-h-screen space-y-6">
           <div className="flex flex-col items-center space-y-8">
-            <span className="bg-blue-700 h-[100px] w-[1px]"></span>
+            <span className="bg-red-700 h-[100px] w-[1px]"></span>
             <span className="text-gray-400">HOME</span>
           </div>
 
           <h1 className="text-4xl text-center">
             Hi! I'm Pablodev, a problem solver, fullstack developer and{" "}
-            <span className="text-blue-700">passionate</span> about what I do!
+            <span className="text-red-700">passionate</span> about what I do!
           </h1>
           <p>
             Focused on solving problems and helping other people through my
             lines of code.
           </p>
 
-          <span className="bg-blue-700 h-[150px] w-[1px]"></span>
+          <span className="bg-red-700 h-[150px] w-[1px]"></span>
         </div>
       </motion.div>
 
       <div className="min-h-screen overflow-x-hidden relative">
         <h1 className="text-center text-3xl">
-          Who are we talking <span className="text-blue-700">about</span>?
+          Who are we talking <span className="text-red-700">about</span>?
         </h1>
 
         <motion.div
@@ -78,7 +71,7 @@ export default function Home() {
                     Pablo Teixeira
                   </span>{" "}
                   or pablodev, a fullstack{" "}
-                  <span className="text-blue-700 font-medium">developer</span>{" "}
+                  <span className="text-red-700 font-medium">developer</span>{" "}
                   and{" "}
                   <span className="text-yellow-700 font-medium">
                     problem solver
@@ -106,7 +99,7 @@ export default function Home() {
                   </span>{" "}
                   since the beginning, so I've had the opportunity to appreciate
                   things like{" "}
-                  <span className="text-blue-300 font-medium">React</span> and{" "}
+                  <span className="text-red-300 font-medium">React</span> and{" "}
                   <span className="text-slate-300 font-medium">Next</span>,
                   which have given me countless possibilities.
                 </p>
@@ -172,7 +165,7 @@ export default function Home() {
           <motion.div drag dragConstraints={constraintsRef}>
             <div className="flex flex-col border-1 border-gray-400 max-w-[300px] items-center rounded-sm absolute right-260 cursor-grab top-110">
               {/* Card picture */}
-              <div className="border-1 border-gray-400 flex justify-between p-2 w-full items-center">
+              <div className="border-1 border-gray-400 flex justify-between p-2 w-full items-center gap-5">
                 <span>Social Media</span>
                 <div>
                   <ul className="flex items-center space-x-4">
@@ -191,7 +184,7 @@ export default function Home() {
               <div className="p-4 flex flex-col space-y-4">
                 <Link
                   href={"https://github.com/Pabloodev"}
-                  className="hover:text-blue-700 duration-700 flex"
+                  className="hover:text-red-700 duration-700 flex"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -201,7 +194,7 @@ export default function Home() {
                   href={
                     "https://github.com/https://www.linkedin.com/in/pabloteixeiraimproving/"
                   }
-                  className="hover:text-blue-700 duration-700 flex"
+                  className="hover:text-red-700 duration-700 flex"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -209,7 +202,7 @@ export default function Home() {
                 </Link>
                 <Link
                   href={"https://www.instagram.com/pablin_teixeira/"}
-                  className="hover:text-blue-700 duration-700 flex"
+                  className="hover:text-red-700 duration-700 flex"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -222,11 +215,11 @@ export default function Home() {
       </div>
 
       <div className="min-h-screen overflow-x-hidden relative flex items-center flex-col space-y-20">
-        <span className="bg-blue-700 h-[100px] w-[1px]"></span>
+        <span className="bg-red-700 h-[100px] w-[1px]"></span>
 
         <h1 className="text-center text-3xl">
-          Some of the techs I like to{" "}
-          <span className="text-blue-700">work</span> with
+          Some of the techs I like to <span className="text-red-700">work</span>{" "}
+          with
         </h1>
         <div className="flex flex-col border-1 border-gray-400 max-w-[500px] items-center rounded-smright-260 ">
           {/* Card picture */}
@@ -304,48 +297,61 @@ export default function Home() {
         </p>
       </div>
       <div className="min-h-screen overflow-x-hidden relative flex items-center flex-col space-y-20">
-        <span className="bg-blue-700 h-[100px] w-[1px]"></span>
+        <span className="bg-red-700 h-[100px] w-[1px]"></span>
 
         <h1 className="text-center text-3xl">
-          <span className="text-blue-700">Main</span> Projects
+          <span className="text-red-700">Main</span> Projects
         </h1>
+
+        {projects.map((item))}
 
         <div className=" h-[300px] border-1 border-gray-400 p-10 flex gap-10">
           <div className="flex flex-col space-y-2">
             <h2 className="text-4xl">OS Rescheduling</h2>
             <div>
-              <ul className="flex gap-5 text-blue-500">
-                <li>
-                  React
-                </li>
-                <li>
-                  Tailwind.css
-                </li>
-                <li>
-                  JavaScript
-                </li>
+              <ul className="flex gap-5 text-red-500">
+                <li>React</li>
+                <li>Tailwind.css</li>
+                <li>JavaScript</li>
               </ul>
             </div>
             <div>
               <p className="text-gray-300 max-w-[250px]">
-              Project created to optimize a process in my sector, it automates the report of customers absent on the day.
+                Project created to optimize a process in my sector, it automates
+                the report of customers absent on the day.
               </p>
             </div>
             <div className="flex gap-5">
-              <Link className="hover:text-blue-700 transition duration-700" href={''}>Deploy</Link>
-              <Link className="hover:text-blue-700 transition duration-700" href={''}>Repositore</Link>
+              <Link
+                className="hover:text-red-700 transition duration-700"
+                href={""}
+              >
+                Deploy
+              </Link>
+              <Link
+                className="hover:text-red-700 transition duration-700"
+                href={""}
+              >
+                Repositore
+              </Link>
             </div>
           </div>
           <div>
-            <Image src={'/rescheduling.png'} width={400} height={400} alt="Photo Project" className="border-1 border-white"/>
+            <Image
+              src={"/rescheduling.png"}
+              width={400}
+              height={400}
+              alt="Photo Project"
+              className="border-1 border-white"
+            />
           </div>
         </div>
       </div>
       <div className="min-h-screen overflow-x-hidden relative flex items-center flex-col space-y-20">
-        <span className="bg-blue-700 h-[100px] w-[1px]"></span>
+        <span className="bg-red-700 h-[100px] w-[1px]"></span>
 
         <h1 className="text-center text-3xl">
-          <span className="text-blue-700">Nice</span> things people say about me
+          <span className="text-red-700">Nice</span> things people say about me
           and my work
         </h1>
 
@@ -383,7 +389,7 @@ export default function Home() {
                 dolor.
               </p>
             </div>
-            <p className="text-blue-500">
+            <p className="text-red-500">
               Vitória Lopes{" "}
               <span className="text-gray-400">
                 // Technical sector supervisor

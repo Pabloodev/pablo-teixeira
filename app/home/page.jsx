@@ -303,8 +303,6 @@ export default function Home() {
           <span className="text-red-700">Main</span> Projects
         </h1>
 
-        {projects.map((item))}
-
         <div className=" h-[300px] border-1 border-gray-400 p-10 flex gap-10">
           <div className="flex flex-col space-y-2">
             <h2 className="text-4xl">OS Rescheduling</h2>

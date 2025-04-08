@@ -58,10 +58,14 @@ export default function About() {
               <span className="text-slate-300 font-medium">Next</span>, which
               have given me countless possibilities.
             </p>
+            <p>
+              I'm studying <span className="text-blue-300 font-medium">AI engineering</span> righ now...
+            </p>
+            
           </div>
         </div>
 
-        <div className="flex flex-col border-1 border-gray-400 max-w-[200px] items-center rounded-sm absolute right-150 top-95 cursor-grab">
+        <div className="flex flex-col border-1 border-gray-400 max-w-[200px] items-center rounded-sm absolute right-150 top-100 cursor-grab">
           {/* Card picture */}
           <div className="border-1 border-gray-400  flex justify-between p-2 w-full items-center">
             <span>Portrait</span>
@@ -106,13 +110,13 @@ export default function About() {
             </div>
           </div>
           <div className="p-4 flex flex-col space-y-4">
-            <p>Actually I work In São Paulo, Brazil.</p>
-            <p>I am part of the athon telecom team.</p>
-            <p>I take on the role of systems analyst</p>
+            <p>Actually I work In <span className="text-blue-300 font-medium">São Paulo</span>, Brazil.</p>
+            <p>I am part of the <span className="text-red-400 font-medium">Athon Telecom</span> team.</p>
+            <p>I take on the role of <span className="text-yellow-400 font-medium">systems analyst</span></p>
           </div>
         </div>
 
-        <div className="flex flex-col border-1 border-gray-400 max-w-[300px] items-center rounded-sm absolute right-260 cursor-grab top-110">
+        <div className="flex flex-col border-1 border-gray-400 max-w-[300px] items-center rounded-sm absolute right-300 cursor-grab top-110">
           {/* Card picture */}
           <div className="border-1 border-gray-400 flex justify-between p-2 w-full items-center gap-5">
             <span>Social Media</span>
@@ -133,7 +137,7 @@ export default function About() {
           <div className="p-4 flex flex-col space-y-4">
             <Link
               href={"https://github.com/Pabloodev"}
-              className="hover:text-red-700 duration-700 flex"
+              className="hover:text-yellow-400 duration-700 flex"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -143,7 +147,7 @@ export default function About() {
               href={
                 "https://github.com/https://www.linkedin.com/in/pabloteixeiraimproving/"
               }
-              className="hover:text-red-700 duration-700 flex"
+              className="hover:text-blue-300 duration-700 flex"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -151,7 +155,7 @@ export default function About() {
             </Link>
             <Link
               href={"https://www.instagram.com/pablin_teixeira/"}
-              className="hover:text-red-700 duration-700 flex"
+              className="hover:text-red-300 duration-700 flex"
               target="_blank"
               rel="noopener noreferrer"
             >

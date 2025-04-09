@@ -1,5 +1,6 @@
 'use client'
 
+import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -12,20 +13,8 @@ export default function Header() {
       href: "#",
     },
     {
-      title: "Serviços",
-      href: "#services",
-    },
-    {
-      title: "Sobre",
-      href: "#about",
-    },
-    // {
-    //   title: "Blog",
-    //   href: "https://pabloodev.github.io/blog-athon-networks/",
-    // },
-    {
-      title: "Contato",
-      href: "#contact",
+      title: "Projetos",
+      href: "/projects",
     },
   ];
 
@@ -60,14 +49,14 @@ export default function Header() {
           ))}
         </ul>
       </nav>
-      <a href="#contact" className="hidden sm:block">
+      <Link href="/work" className="hidden sm:block">
         <button
           className="bg-black hover:bg-white hover:text-black text-white px-4 py-2 rounded rounded-lg duration-700 cursor-pointer border-1 border-gray-400 shadow-white shadow-xs
 "
         >
           Work with me
         </button>
-      </a>
+      </Link>
     </header>
   );
 }

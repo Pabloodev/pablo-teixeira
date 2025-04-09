@@ -1,5 +1,6 @@
 // Components
 import Header from "./ui/components/header";
+import Footer from "./ui/components/Footer";
 
 // Sections
 import Hero from "./ui/components/Hero";
@@ -17,6 +18,7 @@ export default function Page() {
       <Techs />
       <Projects />
       <Feedback />
+      <Footer />
     </div>
   );
 }

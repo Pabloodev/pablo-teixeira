@@ -13,19 +13,6 @@ export default function Feedback(){
         <div className="flex flex-col border-1 border-gray-400 max-w-[600px] items-center rounded-sm right-130 top-30">
           <div className="border-1 border-gray-400  flex justify-between p-2 w-full items-center">
             <span>Testimonial</span>
-            <div>
-              <ul className="flex items-center space-x-4">
-                <li>
-                  <Minus size={15} />
-                </li>
-                <li>
-                  <Square size={15} />
-                </li>
-                <li>
-                  <X size={15} />
-                </li>
-              </ul>
-            </div>
           </div>
           <div className="flex flex-col space-y-4 p-8">
             <div className="flex items-center space-x-4">
@@ -44,7 +31,7 @@ export default function Feedback(){
                 dolor.
               </p>
             </div>
-            <p className="text-red-500">
+            <p className="text-orange-200">
               Vitória Lopes{" "}
               <span className="text-gray-400">
                 // Technical sector supervisor

@@ -7,10 +7,10 @@ import { projects } from "../../data/projects";
 
 export default function CardProject() {
   return (
-    <div className=" border-1 border-gray-400 p-10 flex gap-10">
+    <div className="flex gap-10">
       {projects.map((project) => {
         return (
-          <div className="flex gap-10" key={project.id}>
+          <div className="border-1 border-gray-400 p-10 flex gap-10 rounded-lg" key={project.id}>
             <div className="flex-col flex gap-4">
               <div className="flex justify-between text-yellow-300">
                 <span>{project.id}</span>
@@ -19,7 +19,7 @@ export default function CardProject() {
 
               <h2 className="text-2xl">{project.title}</h2>
 
-              <ul className="flex items-center gap-4 text-gray-400">
+              <ul className="flex items-center gap-5 text-gray-400">
                 {project.tags.map((tag, index) => (
                   <li key={index}>
                     <span>{tag}</span>

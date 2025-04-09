@@ -6,7 +6,7 @@ export default function Techs() {
   return (
     <div className="min-h-screen overflow-x-hidden relative flex items-center flex-col space-y-20">
         <h1 className="text-center text-3xl">
-          Some of the techs I like to <span className="text-red-700">work</span>{" "}
+          Some of the techs I like to <span className="text-green-300">work</span>{" "}
           with
         </h1>
         <div className="flex flex-col border-1 border-gray-400 max-w-[500px] items-center rounded-smright-260 ">
@@ -83,6 +83,11 @@ export default function Techs() {
           *I use other tools, mainly animation tools, but I decided to put the
           main ones in this container.
         </p>
+
+        <div className="mt-10 flex flex-col items-center gap-5">
+        <span>scroll to down</span>
+        <Mouse className="animate-bounce" />
+      </div>
       </div>
   )
 }

@@ -12,7 +12,7 @@ export const projects = [
   {
     id: '02',
     title: "Athon Networks Site",
-    tags: ["React", "Tailwind.css", "JavaScript"],
+    tags: ["Next", "Tailwind.css", "JavaScript"],
     description: "Modern website with animations, created for the company athon networks, using advanced styling tactics.",
     deploy: "https://pabloodev.github.io/scheduling-athon/",
     repo: "https://github.com/Pabloodev/scheduling-athon",
@@ -30,5 +30,3 @@ export const projects = [
     ano: '2024'
   }
 ]
-
-export { projects }

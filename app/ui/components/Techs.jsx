@@ -81,7 +81,7 @@ export default function Techs() {
         </div>
         <p className="text-gray-400">
           *I use other tools, mainly animation tools, but I decided to put the
-          main ones in this container.
+          main ones in this container.*
         </p>
 
         <div className="mt-10 flex flex-col items-center gap-5">

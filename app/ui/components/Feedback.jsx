@@ -21,8 +21,8 @@ export default function Feedback() {
               <Image
                 className="rounded-full"
                 src={feed.avatar}
-                width={60}
-                height={60}
+                width={40}
+                height={40}
                 alt="Avatar Testimonial"
               />
               <p>{feed.content}</p>

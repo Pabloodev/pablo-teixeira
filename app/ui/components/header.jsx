@@ -7,17 +7,6 @@ import { Menu, X } from "lucide-react";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const navData = [
-    {
-      title: "Home",
-      href: "#",
-    },
-    {
-      title: "Projetos",
-      href: "/projects",
-    },
-  ];
-
   return (
     <header className="flex justify-between items-center px-6 sm:px-20 lg:px-40 mt-5">
       <div className="flex items-center gap-2">
@@ -31,28 +20,9 @@ export default function Header() {
         {menuOpen ? <X size={28} /> : <Menu size={28} />}
       </button>
 
-      <nav
-        className={`${
-          menuOpen ? "block" : "hidden"
-        } sm:flex absolute sm:static top-16 left-0 w-full sm:w-auto bg-zinc-900 sm:bg-transparent p-4 sm:p-0 shadow-lg sm:shadow-none rounded sm:rounded-none z-40`}
-      >
-        <ul className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center text-gray-300">
-          {navData.map((item, index) => (
-            <li key={index}>
-              <a
-                className="hover:text-white transition duration-300 ease-in-out"
-                href={item.href}
-              >
-                {item.title}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
       <Link href="/work" className="hidden sm:block">
         <button
-          className="bg-black hover:bg-white hover:text-black text-white px-4 py-2 rounded rounded-lg duration-700 cursor-pointer border-1 border-gray-400 shadow-white shadow-xs
-"
+          className="bg-black text-gray-300 hover:text-white px-4 py-2 rounded rounded-lg duration-700 cursor-pointer"
         >
           Work with me
         </button>

@@ -12,7 +12,6 @@ import Feedback from "./ui/components/Feedback";
 export default function Page() {
   return (
     <div>
-      <Header />
       <Hero />
       <About />
       <Techs />

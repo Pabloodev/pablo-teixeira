@@ -1,5 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 // Data
@@ -29,20 +27,11 @@ export default function CardProject() {
 
               <p className="max-w-[300]">{project.description}</p>
 
-              <Link className="flex gap-2 hover:text-blue-300 transition duration-700 ease-in-out" href={"/"}>
-                <span>Saber mais</span>
+              <button className="cursor-pointer flex gap-2 hover:text-blue-300 transition duration-700 ease-in-out">
+                <span>expand project</span>
                 <ArrowRight />
-              </Link>
+              </button>
             </div>
-
-            {/* Comentando essa foto, a ideia é de colocar o vídeo de cada projeto explicando */}
-
-            {/* <Image
-              src={project.image}
-              alt="Project Thumb"
-              height={400}
-              width={400}
-            /> */}
           </div>
         );
       })}

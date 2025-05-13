@@ -16,14 +16,6 @@ export default function Projects() {
         </li>
       </ul>
 
-      <Link
-        className="flex items-center gap-2 hover:text-blue-300 transition duration-700 ease-in-out"
-        href={"/projects"}
-      >
-        <p>Discover all the projects</p>
-        <ArrowRight />
-      </Link>
-
       <div className="mt-10 flex flex-col items-center gap-5">
         <span>scroll to down</span>
         <Mouse className="animate-bounce" />

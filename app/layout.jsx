@@ -2,6 +2,10 @@ import Header from "./ui/components/header";
 
 import "./ui/globals.css";
 import { geistSans, geistMono } from "./ui/fonts";
+import CursorOne from "./ui/components/CursorOne";
+import CursorTwo from "./ui/components/CursorTwo";
+import CursorThree from "./ui/components/CursorThree";
+import CursorFour from "./ui/components/CursorFour";
 
 export const metadata = {
   title: "Pablo Teixeira | Fullstack developer",
@@ -14,6 +18,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <CursorOne />
+        <CursorTwo />
+        <CursorThree />
+        <CursorFour />
         <Header />
         {children}
       </body>

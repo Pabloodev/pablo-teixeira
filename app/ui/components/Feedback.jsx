@@ -15,7 +15,7 @@ export default function Feedback() {
         {feedbacks.map((feed, index) => (
           <div
             key={index}
-            className="w-[500px] h-[300px] border-1 border-gray-400 flex flex-col space-y-4 p-8"
+            className="w-[500px] h-[300px] border-1 border-gray-400 flex flex-col space-y-4 p-8 rounded-lg"
           >
             <div className="flex items-center space-x-4">
               <Image

@@ -6,6 +6,7 @@ import CursorOne from "./ui/components/CursorOne";
 import CursorTwo from "./ui/components/CursorTwo";
 import CursorThree from "./ui/components/CursorThree";
 import CursorFour from "./ui/components/CursorFour";
+import Work from "./ui/components/Work";
 
 export const metadata = {
   title: "Pablo Teixeira | Fullstack developer",

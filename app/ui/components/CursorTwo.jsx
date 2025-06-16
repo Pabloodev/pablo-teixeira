@@ -48,8 +48,8 @@ export function useFollowPointer(ref) {
  */
 
 const ball = {
-  width: 30,
-  height: 30,
+  width: 20,
+  height: 20,
   backgroundColor: "#03fc03",
   borderRadius: "50%",
 }

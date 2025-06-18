@@ -1,10 +1,9 @@
-import { Minus, Square, X, ArrowRight, FileUser } from "lucide-react";
-import Image from "next/image";
+import { Minus, Square, X, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 export default function Work() {
   return (
-    <div className="min-h-screen overflow-x-hidden relative">
+    <div id="work" className="min-h-screen overflow-x-hidden relative">
         <h1 className="text-center text-3xl">
           Let's work <span className="text-purple-400">together?</span>?
         </h1>
@@ -87,6 +86,32 @@ export default function Work() {
               <ArrowRight />
             </Link>
             
+          </div>
+        </div>
+
+        <div className="flex flex-col border-1 border-gray-400 max-w-[600px] items-center rounded-sm absolute right-80 top-100 cursor-grab">
+          {/* Card picture */}
+          <div className="border-1 border-gray-400  flex justify-between p-2 w-full items-center">
+            <span>Soft Skills</span>
+            <div>
+              <ul className="flex items-center space-x-4">
+                <li>
+                  <Minus size={15} />
+                </li>
+                <li>
+                  <Square size={15} />
+                </li>
+                <li>
+                  <X size={15} />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="p-4 flex flex-col space-y-4">
+            <p>Attention to <span className="text-orange-400 font-medium">details</span></p>
+            <p>I like to <span className="text-purple-400 font-medium">develop as a team</span>, I like the power to progress</p>
+            <p>I am a very <span className="text-pink-300 font-medium">resilient</span> person</p>
+            <p>I am very <span className="text-red-200 font-medium">calm</span> and I like to help make the environment cozy.</p>
           </div>
         </div>
 

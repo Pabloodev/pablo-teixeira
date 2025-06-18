@@ -36,7 +36,7 @@ export default function About() {
               <span className="text-yellow-700 font-medium">
                 problem solver
               </span>
-              !
+              .
             </p>
             <p>
               I'm focused on{" "}
@@ -112,7 +112,7 @@ export default function About() {
           <div className="p-4 flex flex-col space-y-4">
             <p>Actually I work In <span className="text-blue-300 font-medium">São Paulo</span>, Brazil.</p>
             <p>I am part of the <span className="text-red-400 font-medium">Athon Telecom</span> team.</p>
-            <p>I take on the role of <span className="text-yellow-400 font-medium">systems analyst</span></p>
+            <p>I take on the role of <span className="text-yellow-400 font-medium">systems analyst</span>.</p>
           </div>
         </div>
 
